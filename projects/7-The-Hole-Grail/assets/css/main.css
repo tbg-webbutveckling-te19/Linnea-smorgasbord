@@ -1,0 +1,36 @@
+@charset "UTF-8";
+ body{
+     background-color: #B53471;
+ }
+
+ header {
+     background-color:#bc487f;
+     height: 200px;
+ }
+
+ nav {
+     background-color: #c35c8d;
+     height: 75px;
+ }
+
+ main {
+    display:flex;
+    justify-content: flex-start; /*standard value */
+    align-items: stretch; /*standard value */
+    min-height: 700px;
+ }
+
+ main aside{
+     flex:1;
+     background-color: #cb709b;
+ }
+
+ main section{
+    flex:3;
+    background-color:#d285a9;
+ }
+
+ footer {
+     background-color: #bc487f;
+     height: 200px;
+ }

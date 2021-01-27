@@ -1,0 +1,517 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e84393;
+}
+
+.animation-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap-reverse;
+    /*flex-wrap: wrap;
+    flex-direction: row;*/
+    /* flex-flow = sammansättning av flex-wrap och flex-direction */
+
+    width: 95vw;
+    min-height: 80vh;
+
+    background-color: #ea559d;
+
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.parent {
+    width: 32%;
+    min-height: 300px;
+
+    border: 1px solid #FFF;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: snow;
+    text-shadow: 2px 2px 5px #000; /* x y blur color*/
+}
+
+.child{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .2) ;
+
+    padding: 5px;
+
+    position: relative;
+}
+
+/******************************
+          Color Change
+*******************************/
+
+.color-change {
+    width: 100%;
+    height: 75px;
+
+    margin: 15px 0px;
+}
+
+.color-change h2{
+    text-shadow: 0px 0px 0px;
+}
+.change-bg {
+    transition: background-color 0.4s ease-in; /* Cubic Bezier */
+}
+
+.change-bg:hover{
+    background-color: rgb(52, 207, 73);
+}
+
+.change-text h2 {
+    transition: color .4s ease-in-out;
+}
+
+.change-text:hover h2 {
+    color: black;
+}
+
+.change-border {
+    border: 5px solid black;
+    transition: border-color .4s ease;
+}
+
+.change-border:hover {
+    border-color: slateblue;
+}
+
+/******************************
+             Opacity
+*******************************/
+
+.fade {
+    width: 90px;
+    height: 200px;
+
+    border: 0px solid black;
+
+    margin: 5px;
+
+    transition: opacity .5s, border .4s;
+}
+
+.fade:nth-child(1):hover {
+    opacity: 0;
+}
+
+.fade h2 {
+    text-shadow: none;
+    opacity: 0;
+
+    transition: opacity .5s;
+}
+
+.fade:nth-child(2):hover h2 {
+    opacity: 1;
+}
+
+.fade:nth-child(3):hover {
+    border: 5px solid black;
+
+}
+
+/******************************
+             Scale
+*******************************/
+.scale {
+    width: 75px;
+    height: 150px;
+
+    margin:2px;
+
+    transition: transform .3s ease-in-out;
+
+}
+
+.scale:nth-child(1):hover {
+    transform: scaleX(1.1);
+}
+.scale:nth-child(2):hover {
+    transform: scaleY(1.5);
+}
+.scale:nth-child(3):hover {
+    transform: scaleX(.9);
+}
+.scale:nth-child(4):hover {
+    transform: scaleY(.5);
+}
+.scale:nth-child(5):hover {
+    transform: scale(1.5);
+}
+
+/******************************
+        Rotate
+*******************************/
+
+.rotate{
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+
+    transition: transform .3s ease-out;
+}
+
+.rotate:nth-child(1):hover {
+    transform: rotate(90deg);
+}
+
+.rotate:nth-child(2):hover {
+    transform:rotate(-90deg);
+}
+
+.rotate:nth-child(3){
+    transition: all 6s ease;
+}
+
+.rotate:nth-child(3):hover{
+    transform: rotate(100000deg) scale(1.5);
+    border-radius: 100%;
+}
+
+.rotate:nth-child(4):hover{
+    transform: rotateX(180deg);
+}
+
+.rotate:nth-child(5):hover{
+    transform: rotateY(180deg);
+}
+
+/******************************
+        Border-radius
+*******************************/
+.br {
+    width: 150px;
+    height:150px;
+
+    margin: 5px;
+}
+.square,
+.circle {
+    transition: border-radius 0.4s ease;
+}
+.square:hover {
+    border-radius: 100%;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.circle:hover {
+    border-radius: 0%;
+}
+/******************************
+            Translate
+*******************************/
+.translate {
+    width: 75px;
+    height: 75px;
+
+    margin: 5px;
+
+    transition: transform .4s ease-in-out;
+}
+
+.translate:nth-child(1):hover {
+    transform: translateX(10px);
+}
+
+.translate:nth-child(2):hover {
+    transform: translateY(10px);
+}
+
+.translate:nth-child(3):hover {
+    transform:translateX(-10px);
+}
+
+.translate:nth-child(4):hover {
+    transform:translateY(-10px);
+}
+
+.translate:nth-child(5):hover {
+    transform:translate(10px, 10px);
+}
+
+/******************************
+            Delay
+*******************************/
+.delay {
+    width: 50px;
+    height:50px;
+
+    margin: 5px;
+
+    transition: transform 1s ease;
+}
+
+.child:hover .delay{
+    transform: translateX(300px);
+}
+
+.delay:nth-child(odd){
+    background-color: #f9ca24;
+    transition-delay: .4s;
+}
+
+.delay:nth-child(4){
+    background-color: seagreen;
+    transition-delay: .2s;
+}
+
+/******************************
+          Box-shadow
+*******************************/
+.shadow {
+    width: 100%;
+    height: 100%;
+}
+
+.shadow button {
+    width: 80%;
+    height: 50px;
+
+    background-color: black;
+    color: silver;
+
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    transition: all .4s ease;
+}
+
+.btn-shadow1:hover {
+    background: transparent;
+    box-shadow: 2px 2px 0px black;
+}
+
+.btn-shadow2:hover {
+    background: transparent;
+    color: black;
+    box-shadow: 0px 45px 15px -16px black; /* x y blur spread color */
+}
+/******************************
+            Filter
+*******************************/
+
+.filter1,
+.filter2 {
+    width: 100px;
+    height: 100px;
+
+    background-image: url(../images/colors.jpg);
+    background-size: contain;
+
+    transition: filter .4s;
+
+    margin: 5px;
+}
+
+.filter1:nth-child(1) {
+    filter: brightness(100%)
+}
+
+.filter1:nth-child(1):hover {
+    filter: brightness(80%);
+}
+
+.filter1:nth-child(2) {
+    filter: blur(3px);
+}
+
+.filter1:nth-child(2):hover {
+    filter: blur(0px);
+}
+
+.filter1:nth-child(3) {
+    filter: brightness(50%);
+}
+
+.filter1:nth-child(3):hover {
+    filter: brightness(100%)
+}
+
+.filter2:nth-child(1) {
+    filter: contrast(50%);
+}
+
+.filter2:nth-child(1):hover {
+    filter: contrast(200%);
+
+}
+/* 0deg unchanged, between 0deg and  360deg change the color, above 350deg wraps around*/
+.filter2:nth-child(2) {
+    filter: hue-rotate(0deg);
+}
+
+.filter2:nth-child(2):hover {
+    filter: hue-rotate(180deg);
+}
+
+.filter2:nth-child(3) {
+    filter: invert(0%);
+}
+
+.filter2:nth-child(3):hover {
+    filter: invert(100%);
+}
+
+/******************************
+         BG animation
+*******************************/
+.bg-animation {
+    animation: bg-change 3s alternate infinite;
+}
+
+@keyframes bg-change {
+    from {
+        background-color: white ;
+    }
+    to {
+        background-color: palevioletred;
+    }
+}
+
+/******************************
+    Move Square Animation
+*******************************/
+.square-animation {
+    width: 100px;
+    height: 100px;
+
+    background-color:  #43e898;
+
+    border: 1px solid black;
+
+    animation: square-move 5s alternate infinite; /*steps() - hackar sig fram*/
+}
+
+@keyframes square-move {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 100px;
+        left: 100px;
+    }
+}
+
+/******************************
+    Move Around Animation
+*******************************/
+.move-around {
+    width: 100px;
+    height: 100px;
+
+    background-color: #43e898;
+
+    animation: move-around 3s infinite;
+}
+
+@keyframes move-around {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(100px, 0px);
+    }
+    40% {
+        transform: translate(100px, 100px);
+    }
+    60% {
+        transform: translate(-100px, 100px);
+    }
+    80% {
+        transform: translate(-100px, 0px);
+    }
+}
+
+/******************************
+    Image Slider Animation
+*******************************/
+.img-slider {
+    animation: img-slider 10s infinite;
+
+    background-size: cover;
+    /*background-position: center;*/
+}
+
+@keyframes img-slider {
+    0%, 100% {
+        background-image: url(../images/street.jpg);
+    }
+    20% {
+        background-image: url(../images/sad.jpg);
+    }
+    40% {
+        background-image: url(../images/eye.jpg);
+    }
+    60% {
+        background-image: url(../images/berg\ ensam.jpg);
+    }
+    80% {
+        background-image: url(../images/berg.jpg);
+    }
+}
+
+/******************************
+        Ghost animation
+*******************************/
+.ghost {
+    width: 100%;
+    height: 100%;
+}
+
+.ghost img {
+    width: 50%;
+    animation: spooky 5s infinite;
+}
+
+@keyframes spooky{
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+
+/******************************
+    
+*******************************/
+
+/* WET-code = Write Everything twice*/
+/* DRY-code = Don't Repeat Yourself
+/******************************
+        Reusable Classes
+*******************************/
+.add-flex {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-border {
+    border: 1px solid black;
+}
+
+.backco {
+    background-color:  #43e898;
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+    background-color: #fd79a8;
+    margin: 0px;
+}
+
+header {
+    background-color: #e84393;
+    height: 150px;
+    padding: 30px;
+
+}
+
+header h1 {
+    color: white;
+    font-size: 52px;
+    font-weight: 100;
+    margin-bottom: 0px;
+
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+    font-weight: 100px;
+    margin-top: 0px;
+
+}
+
+main {
+    min-height: 800px;
+    background-color: #e84393;
+    margin-top: 20px;
+    display: flex; /* Parent is a flex-container */
+    flex-direction: row; /* Main axis */
+    flex-wrap: wrap;
+    justify-content: space-around; /* Aligns flex-items along the main axis */
+    align-items: stretch; /* Aligns flex-items along the cross axis */
+}
+
+
+main section:nth-child(odd) {
+    background-color: pink;
+}
+
+main section { 
+    /* Parent is a flex-container and we are flex-items */
+    flex: 1;
+    background-color:#f78fb3;
+}
+
+main section:nth-child(1) {
+    flex: 1;
+
+}
+
+main section:nth-child(2) {
+    flex: 4;
+
+}
+
+footer {
+    background-color: #dd1d7a;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+footer section{
+    background-color: #db7498;
+    flex: 1;
+    border-right: 1px solid white;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    font-family: Courier;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer section a {
+    color: white;
+    text-decoration: none;
+}
+
+footer section a:hover {
+    color: #00ff00;
+    font-size: 20px;
+}

@@ -1,0 +1,57 @@
+@charshet "utf-8";
+
+body {
+    background-color: #ffcccc;
+}
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+    font-weight: 100;
+}
+
+h2 {
+    text-align: center;
+    color: #00b894;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+p {
+    color: #00cec9;
+    font-size: 15px;
+
+}
+
+p::first-letter {
+    font-size: 25px;
+    color:#00b894;
+}
+
+ul {
+    background-color:#fd79a8;
+    padding: 20px;
+    box-shadow: 3px 3px 5px burlywood;
+    list-style-type: none;
+}
+
+ul li {
+    color: #fab1a0;
+}
+
+img {
+    width: 120%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    display: block;
+    background-color: coral;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+
+}

@@ -1,0 +1,551 @@
+@charset "UTF-8";
+
+/*      SNOW      
+https://codepen.io/yabehara/pen/gLJqZZ      */
+  body {
+    background-color:#1b1b1b;
+    margin: 0;
+    background-image: url('https://i.imgur.com/BiSmXaq.png'), url('https://i.imgur.com/XHuy0NJ.png'), url('https://i.imgur.com/okpRxJU.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+
+/*@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% {background-color:#1b1b1b; }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color:#1b1b1b;
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #1b1b1b; }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #1b1b1b;
+    }
+}*/
+
+/*      NAV         */
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  padding-bottom: 10px;
+  width: 100%;
+  }
+  
+.nav-sec1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+  
+.nav-sec1 a img {
+  padding-left: 30px;
+}
+  
+.nav-sec2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-top: 20px;
+}
+  
+.search-nav {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+}
+  
+  .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+  
+input[type=search] {
+  -webkit-box-shadow: 6px 6px 6px rgba(241, 242, 246, 0.4);
+          box-shadow: 6px 6px 6px rgba(241, 242, 246, 0.4);
+  background: #000000;
+  border: 2px solid #f1f2f6;
+  outline: none;
+  width: 380px;
+  height: 35px;
+  border-radius: 15px 0 0 15px;
+  font-size: 1.1em;
+  font-weight: 300;
+  padding: 0px 10px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  text-transform: unset;
+  color: #f1f2f6;
+}
+  
+::-webkit-input-placeholder {
+  color: #f1f2f6;
+  font-size: 0.8em;
+}
+  
+:-ms-input-placeholder {
+  color: #f1f2f6;
+  font-size: 0.8em;
+}
+  
+::-ms-input-placeholder {
+  color: #f1f2f6;
+  font-size: 0.8em;
+}
+  
+::placeholder {
+  color: #f1f2f6;
+  font-size: 0.8em;
+}
+  
+.search-btn {
+  -webkit-box-shadow: 6px 6px 6px rgba(241, 242, 246, 0.4);
+          box-shadow: 6px 6px 6px rgba(241, 242, 246, 0.4);
+  height: 35px;
+  width: 45px;
+  outline: none;
+  border-radius: 0 15px 15px 0;
+  background: #f1f2f6;
+  color: #000000;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+  
+.search-btn:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+  
+.search-btn:hover i {
+  font-size: 2.5em;
+}
+  
+.search-btn i {
+  font-size: 2.3em;
+}
+  
+.nav-sec3 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+padding-top: 5px;
+  }
+  
+nav.primary-navigation {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0 0 0;
+  text-align: end;
+  font-size: 16px;
+}
+  
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #e15f41;
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+nav.primary-navigation li a {
+  color: white;
+}
+  
+nav.primary-navigation li a:hover {
+  color:#e15f41;
+}
+  
+nav.primary-navigation li:hover {
+  cursor: pointer;
+}
+  
+a {
+  text-decoration: none;
+}
+  
+a:hover {
+  color:#e15f41;
+}
+
+
+/*          MAIN            */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  min-height: 1000px;
+  width: 100%;
+  margin: 70px 100px;
+  background-color: #151515;
+  box-shadow: 5px 4px 35px #000000;
+  padding-bottom: 40px;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contain-h1 {
+  padding-top:15px;
+  letter-spacing: 3px;
+  font-size: 40px;
+      text-align: center;
+      color: #f3eee8;
+      font-family: 'Niconne', cursive;
+      font-weight: 700;
+      text-shadow: 2px 2px 0px #CC231E, 
+                  3px 3px 0px #34A65F, 
+                  4px 4px 0px #235E6F, 
+/*https://codepen.io/TajShireen/pen/abzmoRE*/
+}
+
+.containers{
+  height: 200px;
+  width: 90%;
+  margin-top: 20px;
+  background-color: #f1f2f6;
+  box-shadow: 7px 7px 5px #000000 ;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  transition: transform .3s;
+}
+
+.containers:hover {
+  transform: scale(1.02);
+}
+
+.sections {
+  height: 85%;
+  width: 47%;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.sections section {
+  width: 80%;
+  height:10%;
+  color: black;
+  text-align: center;
+}
+
+.sections section:nth-child(1){
+  font-weight: 800;
+  font-size: 20px;
+  text-shadow: 1px 3px 3px  #B0B0B0;
+  color: black;
+}
+/*      STARS 
+https://codepen.io/budb/pen/mddKgJw     */
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rating{
+  color: rgb(253, 180, 42);
+}
+/*--------	*/
+.p-text {
+  font-size: 17px;
+  text-shadow:.2px .2px .5px grey;
+}
+
+#bild1 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/christmaschronicles.jpg);
+  background-size: cover;
+}
+
+.bilder {
+  width: 100%;
+  height: 100%;
+}
+
+.bilder:hover{
+  cursor: pointer;
+}
+
+.s2 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/grinchen.jpg);
+  background-size: cover;
+}
+
+.s3 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/lastchristmas.jpg);
+  background-size: cover;
+}
+
+.s4 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/knight.jpg);
+  background-size: cover;
+}
+
+.s5 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/klaus.jpg);
+  background-size: cover;
+}
+
+.s6 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/not.jpeg);
+  background-size: cover;
+}
+
+.s7 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/fatman.jpg);
+  background-size: cover;
+}
+
+.s8 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/spriti.jpg);
+  background-size: cover;
+}
+
+.s9 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/home.jpg);
+  background-size: cover;
+}
+
+.s10 {
+  background-image: url(/Smörgåsbordet/projects/10-Film-And-Series/undersida1/assets/images/olof.jpg);
+  background-size: cover;
+}
+
+/*	FOOTER	*/
+
+.w3hubs-footer{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:#272727;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+.w3hubs-icon{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.w3hubs-icon ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.w3hubs-icon ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background:orange; 
+}
+.w3hubs-icon ul li a{
+  text-decoration: none;
+  color: #272727;
+  font-size: 25px;
+  display: block;
+}
+.w3hubs-icon ul li a i{
+  line-height: 50px;
+}
+.w3hubs-icon ul li:hover{
+  background: #e67e22;
+}
+.w3hubs-icon ul li a:hover >i{
+  transform: scale(1.6) rotate(25deg);
+}
+.w3hubs-nav{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+}
+.w3hubs-nav ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.w3hubs-nav ul li{
+  display: inline-block;
+  margin: 10px 20px;   
+}
+.w3hubs-nav ul li a{
+  text-decoration: none;
+  outline: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.w3hubs-nav ul li a:hover{
+  color:  #e67e22;
+}
+
+.w3hubs-nav1{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 15px;
+}
+.w3hubs-nav1 ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.w3hubs-nav1 ul li{
+  display: inline-block;
+  margin: 0px 20px;  
+}
+.w3hubs-nav1 ul li a{
+  text-decoration: none;
+  outline: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.w3hubs-nav1 ul li a:hover{
+  color:  #e67e22;
+}
+.w3hubs-nav2{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.w3hubs-nav2 ul{
+  
+  text-align: center;
+}
+
+.w3hubs-nav2 ul li{
+  
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+  border-radius: 100%;
+  background:#fff; 
+}
+.w3hubs-nav2 ul li a{
+  text-decoration: none;
+  color: #272727;
+  font-size: 25px;
+  display: block;
+}
+.w3hubs-nav2 ul li a i{
+  line-height: 50px;
+}
+.w3hubs-nav2 ul li:hover{
+  background: #e67e22;
+}
+.w3hubs-nav2 ul li a:hover >i{
+  transform: scale(1.6) rotate(180deg);
+}
+
+@media(max-width:691px ){
+.w3hubs-nav1 ul li a,.w3hubs-nav ul li a{
+  font-size: 16px;
+}
+}
+@media(max-width:604px ){
+.w3hubs-nav1 ul li a,.w3hubs-nav ul li a{
+  font-size: 14px;
+}
+.w3hubs-nav ul li{
+  padding: 0px ;
+}
+}
+@media(max-width:559px ){
+
+.w3hubs-nav1 ul li a,.w3hubs-nav ul li a{
+  font-size: 13px;
+}
+
+}
+@media(max-width:539px ){
+.w3hubs-nav1 ul li a,.w3hubs-nav ul li a{
+  font-size: 11px;
+}
+.w3hubs-nav ul li{
+  margin: 5px 20px;
+}
+.w3hubs-nav ul li.p1 {
+    padding-top: 10px;
+}
+}
+@media(max-width:380px ){
+  .w3hubs-nav ul li,.w3hubs-nav1 ul li{
+    display: block;
+    padding: 5px;
+  }
+.w3hubs-nav2 ul li{
+  display: none;
+}
+.w3hubs-icon ul li a i {
+    line-height: 38px;
+}
+.w3hubs-icon ul li a{
+  font-size: 20px;
+}
+.w3hubs-icon ul li{
+width: 40px;
+    height: 40px;
+}
+}
+@media(max-width: 375px){
+  .w3hubs-nav ul li.p1 {
+    padding-top: 0px;
+}
+}
+
