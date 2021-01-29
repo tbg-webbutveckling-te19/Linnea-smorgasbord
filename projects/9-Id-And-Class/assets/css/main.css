@@ -1,25 +1,33 @@
 @charset "utf-8";
 
-/* . = class */
+body {
+    background-color: #f1f1f1;
+}
+
 .box {
-    width: 200px;
-    height: 200px;
-    background-color: pink;
+    width: 100px;
+    height: 100px;
 
+    background-color: coral;
 }
 
-/* camel-case */
-.empty-space {
-    width: 200px;
-    height: 200px;
+#unique {
+    width: 100px;
+    height: 100px;
+
+    background-color: cadetblue;
 }
 
-.rounded-corners {
-    border-radius: 7px;
+/* Utility/reusable classes */
+
+.m-10 {
+    margin: 10px;
 }
 
-.hello-git {
-    background-color: blue;
-    height:50px;
-    width:100px;
+.rounded-5 {
+    border-radius: 5px;
+}
+
+.rounded-15 {
+    border-radius: 15px;
 }
