@@ -17,3 +17,9 @@
 .rounded-corners {
     border-radius: 7px;
 }
+
+.hello-git {
+    background-color: blue;
+    height:50px;
+    width:100px;
+}
