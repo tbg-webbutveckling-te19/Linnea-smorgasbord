@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,13 +18,65 @@ body {
 header {
     width:100%;
     height: 250px;
+    padding: 0px 200px;
 
-    background-color: #FFF;
+    background-color: #DFDFDF;
+
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav{
+header h1{
+    flex: 1;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.span-logo {
+    color: #007AF3;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+
+main {
     width: 100%;
-    height: 75px;
-
-    background-color: #4C5C7B;
+    min-height: 800px;
 }
+
+.main-left,
+.main-right {
+    background-color: #5d6c88;
+    flex: 1;
+}
+
+.main-center {
+    background-color: #4C5C7B;
+    flex: 4;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+
+    background-color:#515355;
+}
+
+/* Utility Classes */
+
+.add-flex {
+    display: flex;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Färger: #4C5C7B */
