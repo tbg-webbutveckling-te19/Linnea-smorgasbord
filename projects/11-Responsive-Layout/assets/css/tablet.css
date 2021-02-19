@@ -20,6 +20,14 @@ header h1 {
     color: #f30049;
 }
 
+.mobile-menu-icon{
+    ddisplay: none;
+}
+
+.mobile-menu {
+    display:none;
+}
+
 nav {
     width: 100vw;
     order: 1;
