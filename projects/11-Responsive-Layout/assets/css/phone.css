@@ -11,11 +11,11 @@
 }*/
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
-    padding: 0;
+    padding-bottom: 30px;
     justify-content: center;
     align-items: center;
     position: relative;
