@@ -21,7 +21,7 @@ header h1 {
 }
 
 .mobile-menu-icon{
-    ddisplay: none;
+    display: none;
 }
 
 .mobile-menu {
@@ -51,4 +51,50 @@ main {
 
 .main-right {
     order: 3;
+    flex-direction: row;
+}
+
+.rectangle-1 {
+    height: 185px;
+    width: 280px;
+}
+
+.rectangle-1 p {
+    margin-top:90px;
+}
+
+.circle-1 {
+    position: absolute;
+    background-color: black;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: 5px solid  #d6c6c6;
+    top: 265px;
+    right: 43px;
+}
+
+.rectangle-2 {
+    position: relative;
+    height: 280px;
+    width: 185px;
+    background-color: white;
+    margin-bottom: 20px;
+
+    justify-content: center;
+}
+
+.rectangle-2 p {
+    margin-top:90px;
+}
+
+.circle-2 {
+    position: absolute;
+    background-color: black;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: 5px solid  #d6c6c6;
+    top: 640px;
+    right: 43px;
 }

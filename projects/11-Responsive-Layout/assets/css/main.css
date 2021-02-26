@@ -33,7 +33,7 @@ header h1{
 }
 
 .span-logo {
-    color: #007AF3;
+    color: #7fbf7f;
 }
 
 .mobile-menu-icon{
@@ -69,20 +69,76 @@ main {
 
 .main-left,
 .main-right {
-    background-color: #5d6c88;
+    background-color: #d6c6c6;
     flex: 1;
 }
 
 .main-center {
-    background-color: #4C5C7B;
+    background-color: #CCB8B8;
     flex: 4;
+}
+
+.main-right {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rectangle-1 {
+    position: relative;
+    height: 280px;
+    width: 185px;
+    background-color: white;
+    margin-top: 30px;
+
+    justify-content: center;
+}
+
+.rectangle-1 p {
+    margin-top:90px;
+}
+
+.circle-1 {
+    position: absolute;
+    background-color: black;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: 5px solid  #d6c6c6;
+    top: 265px;
+    right: 43px;
+}
+
+.rectangle-2 {
+    position: relative;
+    height: 280px;
+    width: 185px;
+    background-color: white;
+    margin-bottom: 20px;
+
+    justify-content: center;
+}
+
+.rectangle-2 p {
+    margin-top:90px;
+}
+
+.circle-2 {
+    position: absolute;
+    background-color: black;
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    border: 5px solid  #d6c6c6;
+    top: 640px;
+    right: 43px;
 }
 
 footer {
     width: 100%;
     height: 250px;
 
-    background-color:#515355;
+    background-color:#AFAEAE;
 }
 
 /* Utility Classes */
