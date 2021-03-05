@@ -12,12 +12,13 @@ header {
 header h1 {
     order: 2;
     flex: 0;
-    margin-top: -70px;
+    margin-top: 30px;
     font-size: 60px;
+    padding-bottom: 65px;
 }
 
 .span-logo {
-    color: #f30049;
+    color: #a5b7b7;
 }
 
 .mobile-menu-icon{
@@ -32,6 +33,13 @@ nav {
     width: 100vw;
     order: 1;
     flex: 0;
+    background-color: #AFAEAE;
+    padding: 10px 0px;
+}
+
+nav ul li {
+    color: white;
+    text-shadow: 1px 1px 3px black;
 }
 
 main {
@@ -41,60 +49,51 @@ main {
 
 .main-left {
     order: 2;
+    border-top: 1px solid #DFDFDF;
     border-bottom: 1px solid #DFDFDF;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.main-left h2 {
+    margin-top: 10px;
 }
 
 .main-center {
     order: 1;
     flex: 3;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .main-right {
     order: 3;
     flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
-.rectangle-1 {
-    height: 185px;
-    width: 280px;
+.rectangle-1,
+.rectangle-2 {
+    height: 225px;
+    width: 240px;
 }
 
-.rectangle-1 p {
-    margin-top:90px;
+.rectangle-1 p,
+.rectangle-2 p {
+    font-family: system-ui;
+    margin: 80px 10px 0px 10px;
 }
 
-.circle-1 {
-    position: absolute;
-    background-color: black;
-    height: 130px;
-    width: 130px;
-    border-radius: 100%;
-    border: 5px solid  #d6c6c6;
-    top: 265px;
-    right: 43px;
+.circle-1,
+.circle-2 {
+    width: 120px;
+    height: 120px;
+    top: -30px;
+    left: 57px;
 }
 
 .rectangle-2 {
-    position: relative;
-    height: 280px;
-    width: 185px;
-    background-color: white;
-    margin-bottom: 20px;
-
-    justify-content: center;
-}
-
-.rectangle-2 p {
-    margin-top:90px;
-}
-
-.circle-2 {
-    position: absolute;
-    background-color: black;
-    height: 130px;
-    width: 130px;
-    border-radius: 100%;
-    border: 5px solid  #d6c6c6;
-    top: 640px;
-    right: 43px;
+    margin-bottom: 0;
+    margin-top: 30px;
 }

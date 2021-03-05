@@ -1,14 +1,12 @@
 @charset "utf-8";
 
-/*STYLA SCROLLBAR
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: grey;
-}*/
+}
 
 body {
     overflow-x: hidden;
@@ -22,11 +20,13 @@ header {
 }
 
 header h1 {
+    position: absolute;
     margin:0;
+    top: 70px;
 }
 
 .span-logo {
-    color: #02e27a;
+    color: #ccc2b8;
 }
 
 .mobile-menu-icon{
@@ -39,16 +39,18 @@ header h1 {
 }
 
 .mobile-menu {
-    width: 40%;
+    width: 100%;
     display:block;
-    margin-top: 70px;
-    padding: 10px;
+    margin-top: 60px;
+    padding-right:20px;
+    padding-left: 10px;
     margin-left: 700px;
     transition: all .4s;
+    background-color: #CCB8B8;
 }
 
 #checkbox-hack:checked ~ .mobile-menu {
-    margin-left: 300px;
+    margin-left: 410px;
 }
 
 .mobile-menu ul {
@@ -57,10 +59,58 @@ header h1 {
 }
 
 .mobile-menu li {
-    border-bottom: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding-top:4px;
+    padding-bottom: 4px;
+}
+
+.mobile-menu li:hover {
+    color: grey;
 }
 
 nav {
     display: none;
 }
 
+.main-right {
+    padding-top: 25px;
+}
+.rectangle-1,
+.rectangle-2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+.rectangle-1 p,
+.rectangle-2 p {
+    display:none;
+}
+
+.rectangle-1 p:nth-child(2),
+.rectangle-2 p:nth-child(2) {
+    display: block;
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+.circle-1,
+.circle-2 {
+    border: none;
+    width: 150px;
+    height: 150px;
+    right: 15px;
+    top:0px;
+    right:0px;
+    left:0px;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+/*kom på i efterhand att man inte kan använda hover på telefon men du förstår nog vad jag ville uppnå*/
+.circle-1:hover,
+.circle-2:hover {
+    opacity: 0;
+}

@@ -9,32 +9,22 @@ body {
   animation: snow 20s linear infinite;
 }
 
-@-webkit-keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-color: #1b1b1b;
-  }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-    background-color: #1b1b1b;
-  }
+/*@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% {background-color:#1b1b1b; }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color:#1b1b1b;
+    }
 }
-
 @keyframes snow {
-  0% {
-    background-position: 0px 0px, 0px 0px, 0px 0px;
-  }
-  50% {
-    background-color: #1b1b1b;
-  }
-  100% {
-    background-position: 500px 1000px, 400px 400px, 300px 300px;
-    background-color: #1b1b1b;
-  }
-}
-
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #1b1b1b; }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #1b1b1b;
+    }
+}*/
 /*      NAV         */
 .nav-container {
   display: -webkit-box;

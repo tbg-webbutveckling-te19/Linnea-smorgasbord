@@ -17,7 +17,7 @@ body {
 
 header {
     width:100%;
-    height: 250px;
+    height: 200px;
     padding: 0px 200px;
 
     background-color: #DFDFDF;
@@ -33,7 +33,7 @@ header h1{
 }
 
 .span-logo {
-    color: #7fbf7f;
+    color: #a5b7b7;
 }
 
 .mobile-menu-icon{
@@ -60,6 +60,8 @@ nav ul {
 
 nav li {
     cursor: pointer;
+    font-size: 20px;
+    font-family:  system-ui;
 }
 
 main {
@@ -73,65 +75,141 @@ main {
     flex: 1;
 }
 
-.main-center {
-    background-color: #CCB8B8;
-    flex: 4;
-}
-
-.main-right {
+.main-left {
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 
-.rectangle-1 {
+.main-left h2 {
+    margin-top: 60px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px rgb(82, 82, 82);
+}
+
+/*Är inte nöjd med hur texten ser ut men vet inte hur jag ska göra en snygg lösning*/
+.main-left p {
+    margin: 15px 15px 0px 15px;
+    text-align: center;
+    line-height: 23px;
+    font-family: system-ui;
+}
+
+.main-center {
+    background-color: #CCB8B8;
+    flex: 4;
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.main-center h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px rgb(82, 82, 82);
+}
+/*beskär bilderna så att dom alla passar de olika layoutsen*/
+.img-slider {
+    width: 90%;
+    height: 500px;
+    animation: img-slider 20s infinite;
+
+    background-size: cover;
+}
+
+/*Ville egentligen beskära bilderna bättre och olika för varje enhet, men hann ej*/
+@keyframes img-slider { 
+    0%, 100% {
+        background-image: url(../images/makeup1.1.jpg);
+    }
+    20% {
+        background-image: url(../images/makeup2.1.jpg);
+    }
+    40% {
+        background-image: url(../images/makeup3.1.jpg);
+    }
+    60% {
+        background-image: url(../images/makeup4.1.jpg);
+    }
+    80% {
+        background-image: url(../images/makeup1.1.jpg);
+    }
+}
+
+.slider-info p:nth-child(1) {
+    padding-top: 20px;
+}
+
+.slider-info p {
+    padding-top: 10px;
+    font-size: 18px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px rgb(94, 69, 79) ;
+}
+
+
+.main-right {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.container-1{
     position: relative;
+}
+
+.rectangle-1,
+.rectangle-2 {
     height: 280px;
-    width: 185px;
-    background-color: white;
-    margin-top: 30px;
+    width: 180px;
+    background-color: rgb(230, 227, 227);
 
     justify-content: center;
 }
 
-.rectangle-1 p {
-    margin-top:90px;
+.rectangle-1 {
+    margin-top: 30px;
+}
+
+.rectangle-1 p,
+.rectangle-2 p {
+    font-family: system-ui;
+    margin: 80px 10px 0px 10px;
+}
+
+.rectangle-1 p:nth-child(2),
+.rectangle-2 p:nth-child(2) {
+    display: none;
+}
+
+.circle-1,
+.circle-2 {
+    position: absolute;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid  #d6c6c6;
+    top: -40px;
+    right: 25px;
 }
 
 .circle-1 {
-    position: absolute;
-    background-color: black;
-    height: 130px;
-    width: 130px;
-    border-radius: 100%;
-    border: 5px solid  #d6c6c6;
-    top: 265px;
-    right: 43px;
-}
-
-.rectangle-2 {
-    position: relative;
-    height: 280px;
-    width: 185px;
-    background-color: white;
-    margin-bottom: 20px;
-
-    justify-content: center;
-}
-
-.rectangle-2 p {
-    margin-top:90px;
+    background-image: url(../images/woman1.jpg);
 }
 
 .circle-2 {
-    position: absolute;
-    background-color: black;
-    height: 130px;
-    width: 130px;
-    border-radius: 100%;
-    border: 5px solid  #d6c6c6;
-    top: 640px;
-    right: 43px;
+    background-image: url(../images/woman2.jpg);
+}
+
+.container-2 {
+    position: relative;
+}
+
+.rectangle-2 {
+    margin-top: 25px;
 }
 
 footer {
