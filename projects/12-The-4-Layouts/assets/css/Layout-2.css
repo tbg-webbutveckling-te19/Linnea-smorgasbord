@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    height: 75px;
+    background-color: #ace5db;
+
+    flex-direction: row;
+}
+
+.header1 {
+    background-color: thistle;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.header2 {
+    background-color: thistle;
+    flex: 3;
+}
+
+nav {
+    height: 50px;
+    background-color: #cccccc;
+    margin: 20px 0px;
+}
+
+.container {
+    min-height: 1000px;
+
+    flex-direction: row;
+}
+
+.section1 {
+    flex: 3;
+    flex-direction: column;
+}
+
+.section1-1 {
+    flex: 1;
+}
+
+.section1-2 {
+    flex: 1.25;
+}
+
+.section1-3 {
+    flex: 2;
+}
+
+.section2 {
+    flex: 1;
+    margin-left: 15px;
+
+    flex-direction: column;
+}
+
+.section2-1 {
+    flex: 1;
+}
+
+.section2-2 {
+    flex: 2;
+}
+
+.section3 {
+    flex: 1;
+    margin-left:15px;
+
+    flex-direction: column;
+}
+
+.section3-1 {
+    flex: 1;
+}
+
+.section3-2 {
+    flex: 2;
+}
+
+.section3-3 {
+    flex: 1.25;
+}
+
+footer {
+    background-color: #bfbfbf;
+    height: 100px;
+    margin-top: 20px;
+}
+
+/* Utility Classes */
+.add-flex {
+    display: flex;
+}
+
+.margin {
+    margin-top: 15px;
+}
+
+.color1 {
+    background-color: #86b2aa;
+}
+
+.color2 {
+    background-color: #99ccc3;
+}
+
+.color3 {
+    background-color: #ace5db;
+}
