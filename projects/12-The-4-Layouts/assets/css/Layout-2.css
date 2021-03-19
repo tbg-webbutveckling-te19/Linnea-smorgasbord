@@ -12,20 +12,19 @@ body {
 
 header {
     height: 75px;
-    background-color: #ace5db;
 
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .header1 {
     background-color: thistle;
-    flex: 1;
-    margin-right: 30px;
+    width: 250px;
 }
 
 .header2 {
     background-color: thistle;
-    flex: 3;
+    width: 525px;
 }
 
 nav {
@@ -104,6 +103,10 @@ footer {
 
 .margin {
     margin-top: 15px;
+}
+
+.headercolor {
+    background-color: #ace5db;
 }
 
 .color1 {

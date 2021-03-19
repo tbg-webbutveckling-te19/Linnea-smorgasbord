@@ -22,7 +22,7 @@ nav {
 }
 
 .container {
-    height: 1000px;
+    min-height: 1000px;
 
     flex-direction: row;
 }
