@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 * {
-    margin: 2px;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
     height: 200px;
-    background-color: red;
+    background-color: whitesmoke;
 
     flex-direction: column;
     justify-content: center;
@@ -40,23 +40,131 @@ nav li {
     font-family:  system-ui;
 }
 
+.container-slider {
+    justify-content: center;
+
+}
 .slider {
-    width: 100%;
     height: 300px;
+    width: 100%;
+    border: 1px solid black;
     cursor: grab;
     overflow-x: auto;
-    -webkit-overflow-scrolling: inherit;
 }
 
+/*.slider::-webkit-scrollbar {
+    width: 0;
+}*/
+
 .slider div {
-    /* make sure the width is honored */
-    flex-shrink: 0;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
+    margin-right: 2px;
+    /*flex-shrink: 0;*/
     background-color: darkcyan;
 }
+
+.slider::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.slide-1 {
+    background-image: url(../images/uggla.jpg);
+    background-size: cover;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    justify-content: center;
+    background-color: pink;
+    min-height: 400px;
+}
+
+.container-main {
+    margin: 70px 0px;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-1 {
+    height: 290px;
+    width: 230px;
+}
+
+.product-1 img {
+    height: 90%;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+
+    filter: brightness(100%);
+    transition: filter .2s ease-in-out;
+    transition: border .2s ease-in-out
+}
+
+.product-1 img:hover {
+    filter: brightness(90%);
+    border: 2px black solid;
+}
+
+.text {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text h2 {
+    font-size: 20px;
+}
+
+footer {
+    height: 200px;
+    background-color: whitesmoke;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: 150px;
+    width: 250px;
+
+    background-color: lightgrey;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section li {
+    list-style-type: none;
+}
+
+.section:nth-child(4) {
+    flex-direction: column;
+}
+
+
 /* Utility Classes*/
 
 .add-flex {
     display: flex;
+}
+
+.text-margin {
+    margin: 5px;
+}
+
+.product-margin {
+    margin-top: 80px;
 }
