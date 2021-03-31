@@ -8,7 +8,7 @@
 
 header {
     height: 200px;
-    background-color: whitesmoke;
+    background-color:lightgrey;
 
     flex-direction: column;
     justify-content: center;
@@ -16,16 +16,20 @@ header {
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: black;
-    margin-bottom: 20px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: black;
+  background-image: url(../images/NEWLOGO.jpg);
+  background-size: cover;
+  margin-bottom:20px;
+  margin-top: 15px;
 }
 
 nav {
     height: 30px;
     width: 500px;
+    margin-bottom: 30px;
 }
 
 nav ul {
@@ -38,6 +42,11 @@ nav li {
     cursor: pointer;
     font-size: 20px;
     font-family:  system-ui;
+    transition: font-weight .3s ease-in-out;
+}
+
+nav li:hover {
+  font-weight: 600;
 }
 
 .container-slider {
@@ -85,13 +94,15 @@ label {
   .inner h2 {
       position: absolute;
       top: 130px;
-      left: 580px;
+      left: 510px;
+    font-size: 30px;
   }
 
   .inner p {
       position: absolute;
       top: 160px;
-      left: 580px;
+      left: 430px;
+      font-size: ;
   }
   
   #slides .inner {
@@ -216,13 +227,7 @@ label {
     transition:opacity 0.2s ease-out;
   } 
   
-  #slide1:checked ~ #slides article:nth-child(1) .caption,#slide2:checked ~ #slides article:nth-child(2) .caption,#slide3:checked ~ #slides article:nth-child(3) .caption, {
-    opacity:1;
-    -webkit-transition:all 1s ease-out 0.6s;
-    -moz-transition:all 1s ease-out 0.6s;
-    -o-transition:all 1s ease-out 0.6s;
-    transition:all 1s ease-out 0.6s;
-  } 
+
   
   #commands,#commands label,#slides,#active,#active label {
     -webkit-transform:translateZ(0);
@@ -293,7 +298,7 @@ label {
 
 main {
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     min-height: 400px;
     padding: 50px 0px;
 }
@@ -312,20 +317,20 @@ main {
 }
 
 .product-1 img {
-    height: 90%;
-    width: 100%;
-    border-radius: 3px;
-    background-color: white;
+  height: 90%;
+  width: 100%;
+  border-radius: 3px;
+  background-color: white;
 
-    filter: brightness(100%);
-    transition: filter .2s ease-in-out;
-    transition: border .2s ease-in-out
+  filter: brightness(100%);
+  transition: filter .2s ease-in-out;
+  transition: border .2s ease-in-out
 }
 
 .product-1 img:hover {
-    filter: brightness(90%);
-    border: 2px grey solid;
-    cursor: pointer;
+  filter: brightness(90%);
+  border: 2px lightgrey outset;
+  cursor: pointer;
 }
 
 .text {
@@ -337,32 +342,80 @@ main {
     font-size: 20px;
 }
 
-footer {
-    height: 200px;
-    background-color: lightgrey;
+/* footer */
 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+footer {
+  height: 200px;
+  background-color: #d3d3d3;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-footer {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .section {
-    height: 150px;
-    width: 250px;
+  height: 150px;
+  width: 210px;
 
-    background-color:;
-
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section li {
-    list-style-type: none;
+  list-style-type: none;
+  margin: 5px;
+  transition: font-weight color font-size .3s ease;
+}
+
+.section li:hover {
+  font-weight: 550;
+  color: rgb(75, 75, 75);
+  cursor: pointer;
+}
+
+.section h4 {
+  margin-bottom: 5px;
+}
+
+.socials {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+
+.socials img {
+  margin: 7px;
+  cursor: pointer;
+  transition: scale .3s ease-in;
+}
+
+.socials img:hover {
+  transform: scale(0.9);
+}
+
+.socials img:nth-child(1),
+.socials img:nth-child(2) {
+  margin-top: 0px;
+}
+
+.section h4,
+li {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer p {
+  font-size: 13px;
 }
 
 .section:nth-child(4) {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 
