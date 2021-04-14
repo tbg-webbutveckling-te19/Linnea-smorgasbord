@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:whitesmoke;
+}
+
+.nav-1 {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 95px;
+}
+
+.nav-1 a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px 0px 20px;
+}
+
+.nav-1 p {
+    margin-right: 7px;
+}
+
+.nav-1 input {
+    margin-right: 10px;
+}
+
+/* header */
+
+header aside {
+    background-color: lightgrey;
+    height: 200px;
+}
+
+.aside-1 {
+    flex: 1.5;
+}
+
+.aside-2 {
+    flex: 1;
+}
+
+header div {
+    flex: 3;
+    height: 200px;
+    background-color: grey;
+}
+
+/* nav två */
+
+.nav-2 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px 15px 30px;
+    border: 2px black solid;
+    height: 50px;
+}
+
+.nav-2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-2 input {
+    width: 250px;
+    height: 20px;
+}
+
+/*  Main    */
+main {
+    height: 550px;
+    margin-bottom: 30px;
+}
+ .main-1 {
+    flex: 1.5;
+    background-color: grey;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+ .main-2 {
+    flex: 3;
+    background-color:lightgrey;
+
+    flex-direction: column;
+ }
+
+ .main-3 {
+    flex: 1;
+    background-color:grey;
+ }
+.main-1 h3 {
+    margin: 20px 0px 15px 15px;
+}
+
+.con-1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.con-1-1 {
+    height: 100px;
+    width: 56%;
+}
+
+
+.con-1-2 {
+    background-image: url(../images/photo-1530630458144-014709e10016.jpg);
+    background-size: contain;
+    height: 90px;
+    width: 30%;
+}
+
+.con-2 {
+    background-color: lightgreen;
+    flex: 3;
+    width: 100%;
+}
+
+.con-2-2 {
+    background-color: lightpink;
+    flex: 1.5;
+    width: 100%;
+}
+
+.main-2 h3{
+    margin: 20px 0px 15px 15px;
+}
+
+
+
+/* Utility Classes*/
+
+.add-flex {
+    display: flex;
+}
+
+.nav-margin {
+    margin: 5px;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.margin-right {
+    margin-right: 30px;
+}
+
+.margin-20 {
+    margin: 0 20px 0 20px;
+}
