@@ -41,7 +41,7 @@ header aside {
 }
 
 .aside-1 {
-    flex: 1.5;
+    flex: 1.25;
 }
 
 .aside-2 {
@@ -61,7 +61,6 @@ header div {
     justify-content: center;
     align-items: center;
     margin: 15px 30px 15px 30px;
-    border: 2px black solid;
     height: 50px;
 }
 
@@ -81,7 +80,7 @@ main {
     margin-bottom: 30px;
 }
  .main-1 {
-    flex: 1.5;
+    flex: 1.25;
     background-color: grey;
 
     flex-direction: column;
@@ -126,19 +125,67 @@ main {
 }
 
 .con-2 {
-    background-color: lightgreen;
-    flex: 3;
+    flex: 2.7;
     width: 100%;
+
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .con-2-2 {
     background-color: lightpink;
     flex: 1.5;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-2 h3{
     margin: 20px 0px 15px 15px;
+}
+
+.con-2 p {
+    width: 45%;
+    height: 99%;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.img-con {
+    width: 55%;
+    height: 100%;
+    margin-right: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 80%;
+
+    background-image: url(../images/laura-chouette-_nCAYZjHg5I-unsplash\ \(1\).jpg);
+    background-size: cover;
+}
+
+.img-con h4 {
+    color: white;
+    margin-top: 15px;
+}
+
+.carousel {
+    flex-direction: row;
+
+    height: 100%;
+    width: 600px;
+    background-color: lightgrey;
+    overflow-x: scroll;
+}
+
+.item-1 {
+    width: 200px;
+    height: 100%;
+    background-color: blue;
+    margin: 0 10px 0 10px;
 }
 
 
