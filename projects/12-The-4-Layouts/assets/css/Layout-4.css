@@ -43,6 +43,8 @@ header aside {
 
 .aside-1 {
     flex: 1.25;
+    background-image: url(../images/Namnlös\ design\ \(1\).png);
+    background-size: 254px;
 }
 
 .aside-2 {
@@ -52,7 +54,12 @@ header aside {
 header div {
     flex: 3;
     height: 200px;
-    background-color: grey;
+    text-align: center;
+}
+
+header div h1 {
+    margin-top: 40px;
+    font-size: 50px;
 }
 
 /* nav två */
@@ -92,7 +99,7 @@ https://www.youtube.com/watch?v=UOGvJhvLUg0&ab_channel=CodingMarket*/
 .search_wrap .search_box{
 	position: relative;
 	width: 300px;
-	height: 40px;
+	height: 35px;
 }
 
 .search_wrap .search_box .input{
@@ -110,7 +117,7 @@ https://www.youtube.com/watch?v=UOGvJhvLUg0&ab_channel=CodingMarket*/
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 40px;
+	width: 35px;
 	height: 100%;
 	background: #808080;
 	z-index: 1;
@@ -127,7 +134,7 @@ https://www.youtube.com/watch?v=UOGvJhvLUg0&ab_channel=CodingMarket*/
 	left: 50%;
 	transform: translate(-50%,-50%);
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .search_wrap.search_wrap_3 .search_box .input{
@@ -251,13 +258,13 @@ main {
     height: 100%;
     width: 600px;
     background-color: lightgreen;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .item-1 {
     width: 200px;
     height: 100%;
-    background-color: blue;
+    background-image: url(../images/shoes.jpg);
     margin: 0 10px 0 10px;
 }
 
@@ -268,29 +275,7 @@ main {
 }
 
 
-footer {
-    height: 300px;
-    background-color: hotpink;
-}
-
 /* TESTAR SÅ ATT DET SKA FUNKA I MAIN*/
-
-.carous {
-    height: 200px;
-    width: 500px;
-    background-color: blue;
-
-    flex-direction: row;
-
-    overflow-x: scroll;
-}
-
-.item {
-    height: 100%;
-    width: 100px;
-    background-color: khaki;
-    margin: 0 5px 0 5px;
-}
 
 
 /* Utility Classes*/
