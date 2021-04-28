@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+/* Hade velat göra detaljrikt men det blev lite knapert om tid i och med andra uppgifter, men det ser ok ut iaf*/
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
 * {
@@ -8,12 +11,13 @@
 }
 
 body {
-    background-color:whitesmoke;
+    background-color:#f8c789;
 }
 
 .nav-1 {
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 
     margin-top: 30px;
     margin-bottom: 15px;
@@ -24,42 +28,117 @@ body {
     text-decoration: none;
     color: black;
     margin: 0px 20px 0px 20px;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+
+.nav-1 a:hover {
+    transform: scale(1.01);
+    color: #777;
 }
 
 .nav-1 p {
     margin-right: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
-.nav-1 input {
-    margin-right: 10px;
-}
+/* Dropdown Button */
+/*Förbättringar går att göra*/
+.dropbtn {
+    background-color: white;
+    color: #f39c12;
+    width: 100px;
+    height: 20px;
+    font-size: 14px;
+    border: none;
+    margin-left: 15px;
+    transition: all .1s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 9px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all .1s ease-in-out;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content div {
+    color: black;
+    padding: 12px 6px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  .dropdown:hover .dropbtn {
+      background-color: #f39c12;
+      color: white;
+    }
+
+  .dropdown-content button {
+      height: 20px;
+      width: 100%;
+      font-size: 10px;
+  }
 
 /* header */
 
 header aside {
-    background-color: lightgrey;
+    background-color: none;
     height: 200px;
 }
 
 .aside-1 {
     flex: 1.25;
-    background-image: url(../images/Namnlös\ design\ \(1\).png);
-    background-size: 254px;
+    background-image: url(../images/clouds.png);
+    background-size: cover;
+    /*FIXA*/
 }
 
 .aside-2 {
     flex: 1;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-2 p {
+    margin: 2px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.aside-2 img {
+    margin-bottom: 5px;
+    padding-top: 20px;
 }
 
 header div {
     flex: 3;
     height: 200px;
+
     text-align: center;
 }
 
 header div h1 {
-    margin-top: 40px;
-    font-size: 50px;
+    margin-top: 30px;
+    font-size: 60px;
+    font-family: 'Original Surfer', cursive;
 }
 
 /* nav två */
@@ -75,6 +154,12 @@ header div h1 {
 .nav-2 a {
     text-decoration: none;
     color: black;
+    transition: all .2s ease-in-out;
+}
+
+.nav-2 a:hover {
+    transform: scale(1.01);
+    color: #777;
 }
 
 .nav-2 input {
@@ -110,7 +195,8 @@ https://www.youtube.com/watch?v=UOGvJhvLUg0&ab_channel=CodingMarket*/
 	height: 100%;
 	padding: 10px 20px;
 	border-radius: 3px;
-	font-size: 18px;
+	font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .search_wrap .search_box .btn{
@@ -119,13 +205,13 @@ https://www.youtube.com/watch?v=UOGvJhvLUg0&ab_channel=CodingMarket*/
 	right: 0;
 	width: 35px;
 	height: 100%;
-	background: #808080;
+	background: #f39c12;
 	z-index: 1;
 	cursor: pointer;
 }
 
 .search_wrap .search_box .btn:hover{
-	background: #777777;	
+	background: #da8c10;	
 }
 
 .search_wrap .search_box .btn.btn_common .fas{
@@ -160,7 +246,8 @@ main {
 }
  .main-1 {
     flex: 1.25;
-    background-color: grey;
+    background-color: #dfb37b;
+    box-shadow: 2px 2px 10px #777777 ;
 
     flex-direction: column;
     justify-content: space-evenly;
@@ -168,7 +255,8 @@ main {
 
  .main-2 {
     flex: 3;
-    background-color:lightgrey;
+    background-color:#dfb37b;
+    box-shadow: 2px 2px 10px #777777 ;
 
     flex-direction: column;
  }
@@ -179,7 +267,7 @@ main {
     justify-content: space-between;
  }
 .main-1 h3 {
-    margin: 20px 0px 15px 15px;
+    margin: 20px 0px 15px 10px;
 }
 
 .con-1 {
@@ -194,14 +282,35 @@ main {
 .con-1-1 {
     height: 100px;
     width: 56%;
+    margin-left: 5px;
 }
 
 
 .con-1-2 {
-    background-image: url(../images/photo-1530630458144-014709e10016.jpg);
     background-size: contain;
-    height: 90px;
-    width: 30%;
+    height: 95px;
+    width: 35%;
+    margin-right: 5px;
+}
+
+.pic-1 {
+    background-image: url(../images/forsränna.jpg);
+    background-size: cover;
+}
+
+.pic-2 {
+    background-image: url(../images/granö.jpg);
+    background-size: cover;
+}
+
+.pic-3 {
+    background-image: url(../images/hundspann.jpg);
+    background-size: cover;
+}
+
+.pic-4 {
+    background-image: url(../images/renar.jpg);
+    background-size: cover;
 }
 
 .con-2 {
@@ -213,7 +322,7 @@ main {
 }
 
 .con-2-2 {
-    background-color: lightgrey;
+    background-color: #dfb37b;
     flex: 1.5;
     width: 100%;
     justify-content: center;
@@ -221,13 +330,13 @@ main {
 }
 
 .main-2 h3{
-    margin: 20px 0px 15px 15px;
+    margin: 25px 0px 15px 20px;
 }
 
 .con-2 p {
     width: 45%;
     height: 99%;
-    text-align: center;
+    text-align: left;
     margin: 0px 20px 0px 20px;
 }
 
@@ -243,13 +352,13 @@ main {
     width: 100%;
     height: 80%;
 
-    background-image: url(../images/laura-chouette-_nCAYZjHg5I-unsplash\ \(1\).jpg);
+    background-image: url(../images/jokkmokk_sjo.jpg);
     background-size: cover;
 }
 
 .img-con h4 {
-    color: white;
-    margin-top: 15px;
+    color: black;
+    margin-top: 10px;
 }
 
 .carousel {
@@ -257,26 +366,79 @@ main {
 
     height: 100%;
     width: 600px;
-    background-color: lightgreen;
     overflow-x: scroll;
 }
 
+.carousel::-webkit-scrollbar {
+    background-color:#dfb37b;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.carousel::-webkit-scrollbar-button {
+    background-size: green;
+}
+
 .item-1 {
-    width: 200px;
-    height: 100%;
-    background-image: url(../images/shoes.jpg);
-    margin: 0 10px 0 10px;
+    margin: 0 6px 0 6px;
+}
+
+.item-1 img {
+    width: 190px;
+    height: 184px;
+}
+
+.item-1:nth-child(1) {
+    margin: 0 6px 0 0;
 }
 
 .main-3 div {
     height: 175px;
     width: 100%;
-    background-color:grey;
+    background-color:#dfb37b;
+    box-shadow: 2px 2px 5px grey;
 }
 
+.img-slider-1 {
+    animation: img-slider-1 10s infinite;
+    cursor: pointer;
 
-/* TESTAR SÅ ATT DET SKA FUNKA I MAIN*/
+    background-size: cover;
+}
 
+@keyframes img-slider-1 {
+    0%, 100% {
+        background-image: url(../images/nor.jpg);
+    }
+    50% {
+        background-image: url(../images/nor2.jpg);
+    }
+    75% {
+        background-image: url(../images/norlogo.jpg);
+    }
+}
+
+.img-slider-2 {
+    animation: img-slider-2 8s infinite;
+    cursor: pointer;
+
+    background-size: cover;
+}
+
+@keyframes img-slider-2 {
+    0%, 100% {
+        background-image: url(../images/sas1.jpg);
+    }
+    50% {
+        background-image: url(../images/sas2.jpg);
+    }
+    75% {
+        background-image: url(../images/sas3.png);
+    }
+}
 
 /* Utility Classes*/
 
@@ -298,4 +460,17 @@ main {
 
 .margin-20 {
     margin: 0 20px 0 20px;
+}
+
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
 }
