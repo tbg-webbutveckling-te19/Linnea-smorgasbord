@@ -7,6 +7,7 @@
 }
 
 body {
+    min-height: 800px;
     margin: 20px;
     background-color: #34495e;
 }
@@ -53,34 +54,104 @@ header section {
 
 /*  Main    */
 
-main h2 {
+.h2-1 {
     margin: 20px 0 15px 0;
 }
 
-.scroll-container {
+.square-container {
     overflow-x: scroll;
 }
 
-.scroll-item {
+.square-item {
     height: 210px;
     width: 130px;
 }
 
-.scroll-item img {
+.square-item img {
     height: 130px;
     width: 130px;
 }
 
-.scroll-item p {
+.square-item p {
     margin-top: 3px;
     line-height: 22px;
     color: #95a5a6;
 }
 
-.scroll-item h4 {
+.square-item h4 {
     margin-top: 3px;
 }
 
+.h2-2 {
+    margin: 15px 0 15px 0;
+}
+
+.img-slider {
+    height: 150px;
+    width: 100%;
+    margin: auto;
+
+    animation: img-slider 10s infinite;
+    cursor: pointer;
+
+    background-size: cover;
+}
+
+.circle-container {
+    overflow-x: scroll;
+}
+
+.circle-item {
+    height: 170px;
+    width: 120px;
+}
+
+.circle-item img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.circle-item h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@keyframes img-slider {
+    0%, 100% {
+        background-image: url(../images/callingmyphone.jpg);
+    }
+    40% {
+        background-image: url(../images/trust.jpg);
+    }
+    80% {
+        background-image: url(../images/blackbarbie.jpg);
+    }
+}
+
+.rectangle-container {
+    overflow-x: scroll;
+}
+
+.rectangle-item {
+    height: 210px;
+    width: 200px;
+}
+
+.rectangle-item img {
+    height: 130px;
+    width: 200px;
+}
+
+.rectangle-item p {
+    margin-top: 3px;
+    line-height: 22px;
+    color: #95a5a6;
+}
+
+.rectangle-item h4 {
+    margin-top: 3px;
+}
 
 
 /*  Utility classes */
