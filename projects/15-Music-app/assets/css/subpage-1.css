@@ -9,7 +9,7 @@
 body {
     min-height: 800px;
     margin: 20px;
-    background-color: #34495e;
+    background: linear-gradient(#34233f, #754f8f)
 }
 
 /*  Header  */
@@ -39,7 +39,7 @@ header section {
 .holder {
     height: 60px;
     width: 100%;
-    background-color: #485b6e;
+    background-color: rgb(117, 79, 143, 0.5);
 
     border-radius: 5px;
 
@@ -56,6 +56,24 @@ header section {
 
 .h2-1 {
     margin: 20px 0 15px 0;
+}
+
+.album-container {
+    overflow-x: scroll;
+}
+
+.album-item {
+    height: 165px;
+    width: 130px;
+}
+
+.album-item img {
+    height: 130px;
+    width: 130px;
+}
+
+.square-item h4 {
+    margin-top: 3px;
 }
 
 .square-container {
@@ -104,6 +122,7 @@ header section {
 .circle-item {
     height: 170px;
     width: 120px;
+    text-align: center;
 }
 
 .circle-item img {

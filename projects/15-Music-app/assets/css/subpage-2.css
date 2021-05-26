@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#6ba599,#1e2f2b)
+}
+
+/*  Header  */
+header {
+    margin: 20px;
+    min-height: 200px;
+
+    flex-direction: column;
+}
+
+.img-cover {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.album-info {
+    margin-top: 10px;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+.artist {
+    flex-direction: row;
+}
+
+.artist img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 10px 5px 0;
+}
+
+.album-info h2 {
+    margin-bottom: 10px;
+}
+
+.album-info p {
+    margin-top: 5px;
+}
+
+.album-settings {
+    margin-top: 10px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+
+    position: relative;
+}
+
+.settings {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.play {
+    position: absolute;
+
+    height: 40px;
+    width: 40px;
+
+    right: 0;
+    bottom: 0;
+}
+
+/*  Main    */
+
+main {
+    margin: 20px;
+    min-height: 200px;
+}
+
+.song-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+
+    margin-bottom: 20px;
+}
+
+.song-container img {
+    width: 17px;
+}
+
+/*  Utility classes */
+
+.add-flex {
+    display: flex;
+}
+.color {
+    color: #ecf0f1;
+}
+
+.under-color {
+    color: #95a5a6;
+}
