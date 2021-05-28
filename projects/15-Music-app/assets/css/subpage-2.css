@@ -19,9 +19,10 @@ header {
 }
 
 .img-cover {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     margin: auto;
+    margin-bottom: 5px;
 }
 
 .album-info {
@@ -94,6 +95,48 @@ main {
     width: 17px;
 }
 
+.artist-information {
+    height: 40px;
+    width: 100%;
+
+    margin-top: 20px;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.artist-information img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    margin-right: 10px;
+}
+
+h3 {
+    margin: 20px 0 15px 0;
+}
+
+.album-container {
+    overflow-x: scroll;
+}
+
+.album-item {
+    height: 165px;
+    width: 130px;
+}
+
+.album-item img {
+    height: 130px;
+    width: 130px;
+}
+
+.copyright {
+    margin-top: 8px;
+}
+
+
 /*  Utility classes */
 
 .add-flex {
@@ -105,4 +148,12 @@ main {
 
 .under-color {
     color: #95a5a6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.margin-8 {
+    margin-left: 8px;
 }
