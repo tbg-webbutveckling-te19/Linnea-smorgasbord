@@ -5,3 +5,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin: 20px;
+    background: url(../images/songsbackground2.jpg);
+    filter: grayscale(50%);
+    background-size: cover;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty {
+    height: 400px;
+}
+
+.container-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-2 {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    position: relative;
+}
+
+.line {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+.circle {
+    position: absolute;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.times {
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-3 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigger {
+    width: 30px;
+    height: 30px;
+}
+
+.biggest {
+    width: 45px;
+    height: 45px;
+}
+
+.container-4 {
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  Utility Classes */
+.add-flex {
+    display: flex;
+}
+
+.color {
+    color: white;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    color: grey;
+}
