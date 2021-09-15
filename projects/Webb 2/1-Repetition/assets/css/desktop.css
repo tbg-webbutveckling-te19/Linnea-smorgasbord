@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ea8685;
+}
+
+header {
+    height: 300px;
+    border-bottom: 1px solid white;
+
+    /*flex-direction*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-left {
+    flex: 1;
+    justify-content: center;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.header-right {
+    flex: 3;
+    align-items: center;
+}
+
+.header-text {
+    font-size: 60px;
+}
+
+@keyframes slide-in-nav {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    list-style: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    animation: slide-in-nav  1.5s ease-in;
+}
+
+.main-nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+
+    padding: 15px 50px;
+}
+
+.main-nav-link:hover {
+    background-color: pink;
+}
+
+/*  Main    */
+
+.main-block {
+    width: 100%;
+    height: 300px;
+
+    column-gap: 5;
+}
+
+.main-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content:nth-child(1) {
+    flex: 1;
+}
+
+.main-content p {
+    font-size: 45px;
+}
+
+.main-content:nth-child(2) {
+    flex: 1;
+}
+
+.main-content img {
+    width: 45%;
+
+}
+
+.main-content button {
+    width: 450px;
+    height: 100px;
+    border: none;
+    border-radius: 30px;
+    font-size: 30px;
+
+}
+
+/*  footer  */
+
+footer {
+    width: 100%;
+    height: 300px;
+
+    background-color: #d27877;
+
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+footer summary {
+    font-size: 22px;
+    color: white;
+}
+
+footer summary::marker {
+    color: pink;
+}
+
+
+/*  Utility Classes*/
+
+.flex {
+    display: flex;
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.special-case {
+    text-transform: lowercase;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}

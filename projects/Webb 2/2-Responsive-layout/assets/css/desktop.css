@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F3F3F3;
+    position: relative;
+}
+
+.header-object {
+    height: 575px;
+    width: 75%;
+    background-color: #C0DEC7;
+    position: relative;
+}
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav {
+    background-color: #C0DEC7 ;
+    width: 75%;
+
+    justify-content: space-evenly;
+
+    list-style: none;
+}
+
+.main-nav-link {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.main-nav-link a {
+    text-decoration: none;
+    color: black;
+
+    padding: 15px 40px;
+}
+
+button {
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: #F6A9A9;
+}
+
+.nav-button {
+    width: 160px;
+    margin-right: 80px;
+}
+
+.header-text {
+    width: 53%;
+    position: absolute;
+    top: 100px;
+    left: 130px;
+}
+
+.header-text h2 {
+    font-size: 40px;
+}
+
+.header-button {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.header-img-1 {
+    width: 350px;
+    height: 430px;
+    background-color: grey;
+
+    position: absolute;
+    right: -175px;
+    top: 30px;
+}
+
+.header-img-2 {
+    width: 290px;
+    height: 400px;
+    background-color: pink;
+
+    position: absolute;
+    right: -220px;
+    top: 100px;
+}
+
+/*  UTILITY CLASSES */
+.flex {
+    display: flex;
+}
+
+.font-20 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.white {
+    color: white;
+}
