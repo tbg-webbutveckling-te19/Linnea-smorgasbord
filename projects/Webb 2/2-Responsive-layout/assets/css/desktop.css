@@ -155,13 +155,13 @@ h2 {
 
 .about-img {
     width: 525px;
-    height: 475px;
+    min-height: 475px;
     border-right:4px solid rgba(153, 177, 159);
 }
 
 .about-text {
     width: 525px;
-    height: 475px;
+    min-height: 475px;
     background-color: white;
 }
 
