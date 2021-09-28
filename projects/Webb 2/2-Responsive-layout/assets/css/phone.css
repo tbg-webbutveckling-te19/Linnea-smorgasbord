@@ -1,4 +1,49 @@
 
 body {
-    background-color: blue;
+    background-color:white;
+}
+
+.tablet-nav {
+    display: none;
+}
+
+.computer-nav {
+    display: none;
+}
+
+.phone-nav {
+    height: 60px;
+}
+
+.border-phone {
+    height: 4px;
+    background-color: green;
+}
+
+.header-object {
+    display: none;
+}
+
+.header-object-phone-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-object-phone {
+    background-color: greenyellow;
+    width: 90%;
+    height: 400px;
+}
+/**/
+
+.phone {
+    display: block;
+}
+
+.tablet {
+    display: none;
+}
+
+.computer {
+    display: none;
 }

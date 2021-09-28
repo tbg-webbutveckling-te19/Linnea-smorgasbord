@@ -273,3 +273,7 @@ footer {
 .tablet {
     display: none;
 }
+
+.phone {
+    display: none;
+}
