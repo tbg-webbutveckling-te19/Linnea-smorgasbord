@@ -177,13 +177,13 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
   
-  .container-footer {
+.container-footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
+}
   
   .section {
     height: 150px;
@@ -247,6 +247,16 @@ footer {
   .section:nth-child(4) {
     flex-direction: column;
   }
+
+.header-object-phone-container {
+    display: none;
+}
+
+.main-phone-container {
+    display: none;
+}
+
+
 
 /*  UTILITY CLASSES */
 .flex {

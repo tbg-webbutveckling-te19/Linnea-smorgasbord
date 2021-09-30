@@ -191,6 +191,14 @@ h3 {
     width: 40px;
 }
 
+.header-object-phone-container {
+    display: none;
+}
+
+.main-phone-container {
+    display: none;
+}
+
 /*  Utility classes */
 
 .computer {
