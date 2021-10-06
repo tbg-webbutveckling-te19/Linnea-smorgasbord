@@ -256,7 +256,13 @@ footer {
     display: none;
 }
 
+.about-phone-container {
+    display: none;
+}
 
+.phone-nav {
+    display: none;
+}
 
 /*  UTILITY CLASSES */
 .flex {

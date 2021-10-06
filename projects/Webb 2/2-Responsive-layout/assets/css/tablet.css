@@ -199,6 +199,13 @@ h3 {
     display: none;
 }
 
+.about-phone-container {
+    display: none;
+}
+
+.phone-nav {
+    display: none;
+}
 /*  Utility classes */
 
 .computer {
