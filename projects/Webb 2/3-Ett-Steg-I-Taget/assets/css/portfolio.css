@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    background-color: #172029;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 5px orange;
+}
+
+
+.parent-1 {
+    margin-top: 30px;
+    height: 100vh;
+    width: 100vh;
+
+    display: grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+    grid-template-areas:
+    "a . b"
+    ". c ."
+    "d . e";
+}
+
+.item-1 {
+    grid-area: a;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+}
+
+.item-2 {
+    grid-area: b;
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+}
+
+.item-3 {
+    grid-area: c;
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: all .1s ease-in-out;
+}
+
+.item-3:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.item-3:hover ~ div {
+    filter: grayscale(100%);
+}
+
+.item-4 {
+    grid-area: d;
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+}
+
+.item-5 {
+    grid-area: e;
+    background-image: url(../images/5.jpg);
+    background-size: cover;
+}
+
+
+.parent-2 {
+    margin-bottom: 30px;
+    height: 100vh;
+    width: 100vh;
+
+    display: grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+    grid-template-areas:
+    ". a ."
+    "b . c"
+    ". d .";
+}
+
+.item-6 {
+    grid-area: a;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.item-7 {
+    grid-area: b;
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+}
+
+.item-8 {
+    grid-area: c;
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+}
+
+.item-9 {
+    grid-area: d;
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.border {
+    border: 1px solid rgb(126, 126, 126);
+    box-shadow: .5px .5px 2px rgb(53, 53, 53);
+}
