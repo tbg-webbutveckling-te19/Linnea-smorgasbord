@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Wizard</title>
+    <link rel="stylesheet" href="assets/css/wizardGame.css">
+</head>
+<body>
+    <h2 id="health" class="color">HEALTH: <span id="dmgNum">100</span> <span id="warningHealth"></span></h2>
+    <h2 id="endOfGame" class="gameover color">YOU KILLED ME!</h2>
+    <h2 id="mana" class="color">MANA: <span id="manaNum">30</span></h2>
+    <img src="assets/images/wizard.png" alt="wizard" height="320px">
+    <div>
+        <button id="dmgBtn">> DAMAGE TAKEN!</button>
+        <button id="manaBtn">> FOUND A MANA POTION!</button>
+        <button id="spellBtn">> CAST DEVASTATING SPELL!</button>
+    </div>
+    <button class="reset" id="reseter">DO YOU WANT TO TRY AGAIN?</button>
+
+    <script src="assets/js/9-wizardGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/forest.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom:26px;
+}
+
+h2:nth-child(1) {
+    margin-top: 30px;
+}
+
+
+div {
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #cd84f1;
+    box-shadow: 1px 1px 3px blue;
+    margin: 4px;
+    height: 40px;
+    width: 15.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: .5px .5px 1px black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn {
+    color: #e5e5e5;
+    background-color: #b2b2b2;
+    pointer-events: none;
+}
+
+.hideHealth {
+    height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.hideMana {
+    opacity: 0;
+    height: 0;
+}
+
+.reset {
+    opacity: 0;
+    height: 0;
+    cursor: auto;
+}
+
+.addReset {
+    font-size: 18px;
+    letter-spacing: 3px;
+    background-image: linear-gradient(#cc3299, #ee638f);
+    border: 1px white outset;
+    border-radius: 0 !important;
+    width: 100% !important;
+    height: 50px !important;
+    opacity: 1 !important;
+    margin: 0;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.gameover {
+    height: 0;
+    opacity: 0;  
+    margin-bottom: 0;
+}
+
+.endOfGame {
+    height: 20px;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.color {
+    color: #f2f2f2;
+    text-shadow: 1px 1px 4px #006c6b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.warning {
+    color: white;
+    text-shadow: 2px 2px 1px #D980FA;
+}
+
+.alive {
+    transform: rotate(360deg);
+}
+
+img {
+    transition: transform 0.5s;
+}
