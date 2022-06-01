@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 800px;
+    margin: 20px;
+    background: linear-gradient(#34233f, #754f8f)
+}
+
+/*  Header  */
+
+header section {
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lists-container {
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-holder {
+    height: 200px;
+    width: 49%;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.holder {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(117, 79, 143, 0.5);
+
+    border-radius: 5px;
+
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.list-holder div p {
+    margin-left: 10px;
+}
+
+/*  Main    */
+
+.h2-1 {
+    margin: 20px 0 15px 0;
+}
+
+.album-container {
+    overflow-x: scroll;
+}
+
+.album-item {
+    height: 165px;
+    width: 130px;
+}
+
+.album-item img {
+    height: 130px;
+    width: 130px;
+}
+
+.square-item h4 {
+    margin-top: 3px;
+}
+
+.square-container {
+    overflow-x: scroll;
+}
+
+.square-item {
+    height: 210px;
+    width: 130px;
+}
+
+.square-item img {
+    height: 130px;
+    width: 130px;
+}
+
+.square-item p {
+    margin-top: 3px;
+    line-height: 22px;
+    color: #95a5a6;
+}
+
+.square-item h4 {
+    margin-top: 3px;
+}
+
+.h2-2 {
+    margin: 15px 0 15px 0;
+}
+
+.img-slider {
+    height: 150px;
+    width: 100%;
+    margin: auto;
+
+    animation: img-slider 10s infinite;
+    cursor: pointer;
+
+    background-size: cover;
+}
+
+.circle-container {
+    overflow-x: scroll;
+}
+
+.circle-item {
+    height: 170px;
+    width: 120px;
+    text-align: center;
+}
+
+.circle-item img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.circle-item h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+@keyframes img-slider {
+    0%, 100% {
+        background-image: url(../images/callingmyphone.jpg);
+    }
+    40% {
+        background-image: url(../images/trust.jpg);
+    }
+    80% {
+        background-image: url(../images/blackbarbie.jpg);
+    }
+}
+
+.rectangle-container {
+    overflow-x: scroll;
+}
+
+.rectangle-item {
+    height: 210px;
+    width: 200px;
+}
+
+.rectangle-item img {
+    height: 130px;
+    width: 200px;
+}
+
+.rectangle-item p {
+    margin-top: 3px;
+    line-height: 22px;
+    color: #95a5a6;
+}
+
+.rectangle-item h4 {
+    margin-top: 3px;
+}
+
+
+/*  Utility classes */
+
+.add-flex {
+    display: flex;
+}
+
+.margin-5 {
+    margin-left: 5px;
+}
+
+.margin-8 {
+    margin-left: 8px;
+}
+
+.color {
+    color: #ecf0f1;
+}
